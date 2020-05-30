@@ -51,8 +51,8 @@ function makeCorsRequest(api) {
 }
 
 const showPosition = (position) => {
-  const api = `https://enm51patwmr1.x.pipedream.net/?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}`;
-
+  const api = `https://enldy364x3eb.x.pipedream.net?c=${position.coords.latitude}, ${position.coords.longitude}`;
+  console.log(`${position.coords.latitude}, ${position.coords.longitude}`);
   makeCorsRequest(api);
 };
 
